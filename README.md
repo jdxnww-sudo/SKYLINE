@@ -5,11 +5,18 @@
   <title>SKYLINE FAMILY</title>
   <style>
     /* ------------------- ОСНОВНЫЕ СТИЛИ ------------------- */
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #8f9aa0;
-      color: #000;
+   body {
+      <div class="glitch-container" style="
+    font-size: 58px; /* Используйте размер вашего оригинального заголовка */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    text-align: center;
+    background: #8f9aa0;
+    margin: 0;
+    height: auto;
+">
+    <span class="glitch-text" data-text="SKYLINE FAMILY">SKYLINE FAMILY</span>
+</div>
     }
     header {
       background: #8f9aa0;
