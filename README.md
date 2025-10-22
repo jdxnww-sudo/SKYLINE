@@ -81,6 +81,42 @@
       background: #55788a;
       font-size: 14px;
     }
+    .content {
+    margin: 20px 10px;
+}
+@media (max-width: 767px) {
+    header {
+        font-size: 30px; 
+        padding: 15px;
+    }
+ nav {
+        flex-direction: column; 
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .main-image img {
+        width: 95%; 
+    }
+    .main-image .circle {
+        right: 5%;
+        top: 10px;
+        transform: none; 
+    }
+    .column {
+        width: 95%; 
+        max-width: none; 
+        margin: 10px auto; 
+        padding: 15px; 
+    }
+    .chat-selector button, .info-button, .telegram-link a {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .popup {
+        width: 90%;
+        max-width: 350px;
+    }
   </style>
   <script>
     function showChat(chatId) {
