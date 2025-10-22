@@ -102,7 +102,6 @@
 
   <div class="main-image">
     <img src="photo_2025-05-23_22-46-47.jpg" />
-" alt="Main Visual">
   </div>
 
   <div class="content">
@@ -112,13 +111,13 @@
         <button onclick="showChat('chat1')">CHAT 1</button>
         <button onclick="showChat('chat2')">CHAT 2</button>
         <button onclick="showChat('chat3')">CHAT 3</button>
-             </body>
+            /dody
       </div>
       <div id="chat1" class="chat-window">
         <h4>CHAT 1: Cozy Vibes</h4>
         <p>Добро пожаловать в уютный чат. Здесь царит спокойствие и ламповая атмосфера.</p>
         <audio controls>
-          <source src="c:\Users\E\Downloads\Forg Chat 1.mp3" type="audio/mpeg">
+          <source src="Forg Chat 1.mp3" type="audio/mpeg">
         </audio>
       </div>
 
@@ -126,7 +125,7 @@
         <h4>CHAT 2: Urban Pulse</h4>
         <p>Городская эстетика, ритмы мегаполиса и динамичные разговоры.</p>
         <audio controls>
-          <source src="c:\Users\E\Downloads\Away Chat 2.m4a" type="audio/mpeg">
+          <source src="Away Chat 2.m4a" type="audio/mpeg">
         </audio>
       </div>
 
@@ -134,7 +133,7 @@
         <h4>CHAT 3: Dreamspace</h4>
         <p>Место для мечтателей, вдохновения и креативных идей.</p>
         <audio controls>
-          <source src="c:\Users\E\Downloads\First Chat 3.mp3" type="audio/mpeg">
+          <source src="First Chat 3.mp3" type="audio/mpeg">
         </audio>
       </div>
     </div>
