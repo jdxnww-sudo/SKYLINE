@@ -5,54 +5,38 @@
   <title>SKYLINE FAMILY</title>
   <style>
     /* ------------------- ОСНОВНЫЕ СТИЛИ ------------------- */
-    /* Исправлено: Удален неправильно вложенный div из body */
-    body {
-      font-family: 'Arial', sans-serif; /* Более минималистичный шрифт */
-      margin: 0;
-      background: #f4f4f4; /* Светлый, минималистичный фон */
-      color: #333;
+   body {
+      <div class="glitch-container" style="
+    font-size: 64px; /* Используйте размер вашего оригинального заголовка */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    text-align: center;
+    background: #8f9aa0;
+    margin: 0;
+    height: auto;
+">
+    <span class="glitch-text" data-text="SKYLINE FAMILY">SKYLINE FAMILY</span>
+</div>
     }
-
     header {
-      /* --- Эстетичный, большой заголовок --- */
-      font-size: 80px; /* Сделаем его больше */
-      font-weight: 900; /* Очень жирный */
-      letter-spacing: 5px; /* Больше пространства между буквами для эстетики */
-      padding: 40px 20px;
-      text-align: center;
-      background: #8f9aa0; /* Тот же фон, что и в оригинале */
-      /* ИСПОЛЬЗУЕМ ГРАДИЕНТНЫЙ ТЕКСТ С АНИМАЦИЕЙ (Aurora-like) */
-      background-image: linear-gradient(
-        45deg,
-        #b2d8d8, /* Светлый голубовато-серый */
-        #778899, /* Более темный голубовато-серый */
-        #555555, /* Темно-серый */
-        #3c4048 /* Почти черный */
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: transparent; /* Fallback */
-      background-size: 400% 400%;
-      animation: aurora-gradient 15s ease infinite; /* Сделаем анимацию немного медленнее */
+   background-image: linear-gradient(
+    45deg,
+    b2d8d8
+    778899
+    555555
+    3c4048 
+   );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
+   background-size: 400% 400%;
+  animation: aurora-gradient 10s ease infinite; 
+}
+@media (max-width: 767px) {
+  header {
+    font-size: 38px;
+    letter-spacing: 2px;
     }
-
-    /* Анимация градиента */
-    @keyframes aurora-gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* MEDIA QUERY для заголовка на мобильных */
-    @media (max-width: 767px) {
-      header {
-        font-size: 48px; /* Меньше на мобильных */
-        padding: 25px 10px;
-        letter-spacing: 2px;
-      }
-    }
-
-    /* Остальные стили оставлены без изменений для сохранения минимализма */
     nav {
       display: flex;
       justify-content: center;
@@ -87,16 +71,16 @@
     }
     .content {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap; /* Позволяет колонкам переноситься */
       justify-content: space-around;
       margin: 40px 20px;
     }
     .column {
       width: 30%;
-      min-width: 250px;
+      min-width: 250px; /* Минимальная ширина для лучшего отображения */
       margin-bottom: 20px;
       padding: 15px;
-      background: #d4d4d4;
+      background: #d4d4d4; /* Легкий фон для колонок */
       border-radius: 8px;
     }
     .column h3 {
@@ -150,7 +134,7 @@
       font-weight: bold;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: background-color 0.3s ease;
-      display: block;
+      display: block; /* Занимает всю ширину колонки */
       width: 100%;
       box-sizing: border-box;
       margin-top: 10px;
@@ -208,7 +192,7 @@
       transition: background-color 0.3s ease;
     }
     .telegram-link a:hover {
-      background-color: #8f9aa0 !important;
+      background-color: #8f9aa0 !important; /* !important, чтобы переопределить inline-стиль */
     }
     /* ------------------- СТИЛИ MOOD GENERATOR ------------------- */
     .mood-container {
@@ -248,10 +232,14 @@
     /* ------------------- МЕДИА-ЗАПРОСЫ ------------------- */
     @media (max-width: 1024px) {
         .column {
-            width: 45%;
+            width: 45%; /* Две колонки на средней ширине */
         }
     }
     @media (max-width: 767px) {
+      header {
+        font-size: 30px;
+        padding: 15px;
+      }
       nav {
         flex-direction: column;
         gap: 10px;
@@ -272,7 +260,7 @@
         margin: 20px 10px;
       }
       .column {
-        width: 95%;
+        width: 95%; /* Одна колонка на мобильных */
         max-width: none;
         margin: 10px auto;
         padding: 15px;
@@ -461,7 +449,7 @@
       if (mood.audio) {
         audioPlayer.src = mood.audio;
         audioPlayer.style.display = 'block';
-        audioPlayer.load();
+        audioPlayer.load(); // Перезагрузка аудио
       } else {
         audioPlayer.style.display = 'none';
         audioPlayer.pause();
