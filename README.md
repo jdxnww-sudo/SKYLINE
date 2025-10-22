@@ -19,13 +19,23 @@
 </div>
     }
     header {
-      background: #8f9aa0;
-      padding: 20px;
-      text-align: center;
-      font-size: 58px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-family: 'Courier New', Courier, monospace;
+   background-image: linear-gradient(
+    45deg,
+    b2d8d8
+    778899
+    555555
+    3c4048 
+   );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
+   background-size: 400% 400%;
+  animation: aurora-gradient 10s ease infinite; 
+}
+@media (max-width: 767px) {
+  header {
+    font-size: 38px;
+    letter-spacing: 2px;
     }
     nav {
       display: flex;
