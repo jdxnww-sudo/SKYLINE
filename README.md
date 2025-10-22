@@ -276,13 +276,13 @@
 
   <div class="content">
 
-    <div class="column">
+  <div class="column">
       <h3>Chat Selector</h3>
       <div class="chat-selector">
         <button onclick="showChat('chat1')">CHAT 1</button>
         <button onclick="showChat('chat2')">CHAT 2</button>
         <button onclick="showChat('chat3')">CHAT 3</button>
-        /dody
+      /body
       </div>
       <div id="chat1" class="chat-window">
         <h4>CHAT 1: Cozy Vibes</h4>
@@ -307,22 +307,22 @@
       </div>
     </div>
 
-    <div class="column">
+   <div class="column">
       <h3>Opening Date</h3>
       <p><strong>12 November 2023</strong><br>
       Our new website is finally live! Explore the new features and design.</p>
 
-      <h3>Dream Team Project</h3>
+  <h3>Dream Team Project</h3>
       <ul>
         <li>Vibe</li>
         <li>Teamwork</li>
         <li>Illustration</li>
       </ul>
 
-      <button class="info-button" onclick="openPopup()">Подробнее о нас</button>
+  <button class="info-button" onclick="openPopup()">Подробнее о нас</button>
     </div>
 
-    <div class="column">
+  <div class="column">
       <h3>MEM ZONE</h3>
       <div id="memeGallery" style="text-align:center;">
         <div class="meme">
@@ -338,7 +338,7 @@
       </div>
     </div>
 
-    <div class="column">
+  <div class="column">
       <h3>Mood Generator</h3>
       <div class="mood-container">
         <button class="mood-btn" onclick="generateMood()">Сгенерировать Настроение</button>
