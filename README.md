@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
       background: #8f9aa0;
       padding: 20px;
       text-align: center;
-      font-size: 46px;
+      font-size: 58px;
       font-weight: bold;
       letter-spacing: 2px;
       font-family: 'Courier New', Courier, monospace;
@@ -37,14 +37,14 @@
       margin-top: 20px;
     }
     .main-image img {
-      width: 80%;
-      max-width: 800px;
-      border-radius: 10px;
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 20px;
     }
     .main-image .circle {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 30px;
       background: #000;
       color: #8f9aa0;
       border-radius: 50%;
@@ -90,7 +90,6 @@
     }
   </script>
 </head>
-<body>
 
   <header>SKYLINE FAMILY</header>
 
@@ -163,7 +162,7 @@
 <div style="text-align: center; margin: 20px;">
   <a href="https://t.me/SkylineProject" target="_blank" style="
     display: inline-block;
-    background-color: #8f9aa0;
+    background-color: #55788a;
     color: white;
     padding: 12px 24px;
     font-size: 16px;
