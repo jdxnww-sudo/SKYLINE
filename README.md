@@ -101,7 +101,8 @@
 </nav>
 
   <div class="main-image">
-    <img src="c:\Users\E\Downloads\photo_2025-05-23_22-46-47.jpg" alt="Main Visual">
+    <img src="photo_2025-05-23_22-46-47.jpg" />
+" alt="Main Visual">
   </div>
 
   <div class="content">
@@ -111,10 +112,8 @@
         <button onclick="showChat('chat1')">CHAT 1</button>
         <button onclick="showChat('chat2')">CHAT 2</button>
         <button onclick="showChat('chat3')">CHAT 3</button>
-             
-        </body>
+             </body>
       </div>
-
       <div id="chat1" class="chat-window">
         <h4>CHAT 1: Cozy Vibes</h4>
         <p>Добро пожаловать в уютный чат. Здесь царит спокойствие и ламповая атмосфера.</p>
@@ -123,7 +122,7 @@
         </audio>
       </div>
 
-      <div id="chat2" class="chat-window">
+  <div id="chat2" class="chat-window">
         <h4>CHAT 2: Urban Pulse</h4>
         <p>Городская эстетика, ритмы мегаполиса и динамичные разговоры.</p>
         <audio controls>
@@ -131,7 +130,7 @@
         </audio>
       </div>
 
-      <div id="chat3" class="chat-window">
+   <div id="chat3" class="chat-window">
         <h4>CHAT 3: Dreamspace</h4>
         <p>Место для мечтателей, вдохновения и креативных идей.</p>
         <audio controls>
@@ -140,13 +139,13 @@
       </div>
     </div>
 
-    <div class="column">
+<div class="column">
       <h3>Opening Date</h3>
       <p><strong>12 November 2023</strong><br>
       Our new website is finally live! Explore the new features and design.</p>
     </div>
 
-    <div class="column">
+<div class="column">
       <h3>Dream Team Project</h3>
       <ul>
         <li>Vibe</li>
@@ -191,7 +190,7 @@
       background-color: #55788a;
     }
 
-    .info-button {
+  .info-button {
       background-color: #55788a;
       color: white;
       padding: 12px 24px;
@@ -204,11 +203,11 @@
       transition: background-color 0.3s ease;
     }
 
-    .info-button:hover {
+   .info-button:hover {
       background-color: #426475;
     }
 
-    .popup {
+  .popup {
       display: none;
       position: fixed;
       top: 30%;
@@ -224,11 +223,11 @@
       text-align: center;
     }
 
-    .popup h3 {
+  .popup h3 {
       margin-top: 0;
     }
 
-    .close-btn {
+   .close-btn {
       margin-top: 15px;
       background-color: #8f9aa0;
       border: none;
@@ -237,7 +236,7 @@
       cursor: pointer;
     }
 
-    .overlay {
+   .overlay {
       display: none;
       position: fixed;
       top: 0; left: 0;
@@ -334,11 +333,12 @@
       transition: background 1s ease;
     }
 
-    .mood-container {
+    
+.mood-container {
       padding: 60px 20px;
     }
 
-    .mood-btn {
+  .mood-btn {
       background-color: #6a00ff;
       color: white;
       padding: 14px 28px;
@@ -350,30 +350,29 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.2);
       transition: background-color 0.3s ease;
     }
-
-    .mood-btn:hover {
+     .mood-btn:hover {
       background-color: #4b00b5;
     }
 
-    .mood-visual {
+  .mood-visual {
       margin-top: 40px;
     }
 
-    .mood-visual img {
+  .mood-visual img {
       width: 80%;
       max-width: 500px;
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
 
-    .mood-quote {
+ .mood-quote {
       margin-top: 20px;
       font-size: 22px;
       font-style: italic;
       color: #333;
     }
 
-    audio {
+  audio {
       margin-top: 20px;
     }
   </style>
