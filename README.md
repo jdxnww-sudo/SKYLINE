@@ -7,7 +7,7 @@
     /* ------------------- ОСНОВНЫЕ СТИЛИ ------------------- */
    body {
       <div class="glitch-container" style="
-    font-size: 58px; /* Используйте размер вашего оригинального заголовка */
+    font-size: 64px; /* Используйте размер вашего оригинального заголовка */
     font-family: 'Courier New', Courier, monospace;
     padding: 20px;
     text-align: center;
