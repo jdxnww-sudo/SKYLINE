@@ -439,44 +439,4 @@
         audioPlayer.src = '';
       }
 
-      <footer class="site-footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Owner - So Vein</p>
-    </div>
-</footer>
-<style>
-/* Стили для футера (подвала) */
-.site-footer {
-    /* Фиксирование внизу страницы */
-    width: 100%;
-    /* Если футер должен быть в самом конце контента, используйте 'relative' или 'static' */
-    /* position: fixed; 
-    bottom: 0; */ 
-    
-    /* Базовый стиль */
-    background-color: #2c3e50; /* Темный, глубокий синий/серый цвет */
-    color: #ecf0f1; /* Светлый, почти белый текст */
-    padding: 15px 0; /* Внутренние отступы сверху и снизу */
-    text-align: center; /* Центрирование текста */
-    font-family: Arial, sans-serif; /* Хорошо читаемый шрифт */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень сверху */
-}
-
-.footer-content p {
-    margin: 0; /* Убираем стандартные отступы параграфа */
-    font-size: 14px; /* Размер шрифта */
-    letter-spacing: 0.5px; /* Небольшой интервал между буквами для читаемости */
-    opacity: 0.9; /* Небольшая прозрачность */
-}
-
-/* Дополнительный стиль, если вы хотите сделать акцент на имени */
-.footer-content p span {
-    font-weight: bold; /* Жирный шрифт для имени */
-    color: #3498db; /* Яркий, акцентный синий цвет */
-}
-</style>
-    }
-  </script>
-
-</body>
-</html>
+   
