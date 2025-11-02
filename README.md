@@ -266,8 +266,7 @@
   <nav>
     <a href="#">Our team</a>
     <a href="#">Administration</a>
-    <a href="#">Music</a>
-  </nav>
+    <a href="#">Merch</a>  </nav>
 
   <div class="main-image">
     <img src="photo_2025-05-23_22-46-47.jpg" alt="Skyline Family Main Image" />
@@ -282,8 +281,7 @@
         <button onclick="showChat('chat1')">CHAT 1</button>
         <button onclick="showChat('chat2')">CHAT 2</button>
         <button onclick="showChat('chat3')">CHAT 3</button>
-        /dody
-      </div>
+        </div>
       <div id="chat1" class="chat-window">
         <h4>CHAT 1: Cozy Vibes</h4>
         <p>Добро пожаловать в уютный чат. Здесь царит спокойствие и ламповая атмосфера.</p>
@@ -443,3 +441,4 @@
 
 </body>
 </html>
+
