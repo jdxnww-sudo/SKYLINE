@@ -356,8 +356,8 @@
       <h3>MEM ZONE</h3>
       <div id="memeGallery" style="text-align:center;">
         <div class="meme">
-          <img src="https://via.placeholder.com/250x150?text=Meme+Placeholder" alt="Meme 1" style="width:100%; max-width:250px; border-radius:10px;">
-          <p>Когда подумал о своей жизни</p>
+          <img src="mem 1.jpg" alt="Meme 1" style="width:100%; max-width:250px; border-radius:10px;">
+          <p>Когда Влад увидел стату меньше 7к</p>
         </div>
       </div>
       <div style="margin-top:20px;">
