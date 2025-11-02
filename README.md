@@ -57,6 +57,8 @@
       flex-wrap: wrap; /* Позволяет колонкам переноситься */
       justify-content: space-around;
       margin: 40px 20px;
+      /* Добавлено для управления видимостью секций */
+      /* display: flex; по умолчанию, поэтому просто добавляем его в JS при показе */
     }
     .column {
       width: 30%;
@@ -212,10 +214,31 @@
       font-style: italic;
       color: #333;
     }
+
+    /* ------------------- СТИЛИ MERCH SECTION ------------------- */
+    .merch-section {
+        margin: 40px auto;
+        padding: 20px;
+        max-width: 800px;
+        text-align: center;
+        background: #d4d4d4;
+        border-radius: 10px;
+    }
+    .merch-section img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 20px;
+    }
     /* ------------------- МЕДИА-ЗАПРОСЫ ------------------- */
     @media (max-width: 1024px) {
         .column {
             width: 45%; /* Две колонки на средней ширине */
+        }
+        .merch-section {
+            margin: 20px;
         }
     }
     @media (max-width: 767px) {
@@ -264,16 +287,17 @@
   <header>SKYLINE FAMILY</header>
 
   <nav>
-    <a href="#">Our team</a>
-    <a href="#">Administration</a>
-    <a href="#">Merch</a>  </nav>
+    <a href="#" onclick="showSection('main')">Our team</a>
+    <a href="#" onclick="showSection('main')">Administration</a>
+    <a href="#" onclick="showSection('merch')">Merch</a>
+  </nav>
 
   <div class="main-image">
     <img src="photo_2025-05-23_22-46-47.jpg" alt="Skyline Family Main Image" />
     <div class="circle">NEW</div>
   </div>
 
-  <div class="content">
+  <div id="mainContent" class="content">
 
     <div class="column">
       <h3>Chat Selector</h3>
@@ -281,7 +305,7 @@
         <button onclick="showChat('chat1')">CHAT 1</button>
         <button onclick="showChat('chat2')">CHAT 2</button>
         <button onclick="showChat('chat3')">CHAT 3</button>
-        </div>
+      </div>
       <div id="chat1" class="chat-window">
         <h4>CHAT 1: Cozy Vibes</h4>
         <p>Добро пожаловать в уютный чат. Здесь царит спокойствие и ламповая атмосфера.</p>
@@ -348,7 +372,17 @@
       </div>
     </div>
 
-  </div> <div class="telegram-link">
+  </div>
+  <div id="merchSection" class="merch-section" style="display: none;">
+      <h2>SKYLINE FAMILY MERCH</h2>
+      <p style="font-size: 1.2em; color: #55788a; margin-bottom: 25px;">Поддержите проект и получите эксклюзивные вещи! ✨</p>
+      
+      <img src="http://googleusercontent.com/image_collection/image_retrieval/180634520233982858_0" alt="Skyline Family Merchandise Mockup">
+      
+      <p style="margin-top: 30px; font-size: 1.3em; font-weight: bold; color: #333;">СКОРО В ПРОДАЖЕ!</p>
+      <button onclick="showSection('main')" class="info-button" style="width: 50%; max-width: 300px; margin: 20px auto 0;">Вернуться на главную</button>
+  </div>
+  <div class="telegram-link">
     <a href="https://t.me/SkylineProject" target="_blank" onmouseover="this.style.backgroundColor='#8f9aa0'" onmouseout="this.style.backgroundColor='#55788a'">
       Перейти в Telegram-канал c вашим вайбом 🚀
     </a>
@@ -367,6 +401,30 @@
 
 
   <script>
+    // ------------------- УПРАВЛЕНИЕ СЕКЦИЯМИ -------------------
+    function showSection(sectionId) {
+      const mainContent = document.getElementById('mainContent');
+      const merchSection = document.getElementById('merchSection');
+      const telegramLink = document.querySelector('.telegram-link');
+      
+      // Скрываем все чаты при переключении между основными разделами
+      const chats = document.querySelectorAll('.chat-window');
+      chats.forEach(chat => chat.style.display = 'none');
+
+      if (sectionId === 'main') {
+        // Показываем основной контент
+        mainContent.style.display = 'flex';
+        merchSection.style.display = 'none';
+        telegramLink.style.display = 'block'; 
+      } else if (sectionId === 'merch') {
+        // Показываем мерч
+        mainContent.style.display = 'none';
+        merchSection.style.display = 'block'; // Используем block для центрирования
+        telegramLink.style.display = 'none'; 
+      }
+    }
+
+
     // ------------------- ЧАТЫ -------------------
     function showChat(chatId) {
       const chats = document.querySelectorAll('.chat-window');
@@ -441,4 +499,3 @@
 
 </body>
 </html>
-
