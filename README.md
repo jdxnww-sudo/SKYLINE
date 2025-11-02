@@ -214,9 +214,7 @@
       font-style: italic;
       color: #333;
     }
-
-    /* ------------------- СТИЛИ MERCH SECTION ------------------- */
-    .merch-section {
+   .merch-section {
         margin: 40px auto;
         padding: 20px;
         max-width: 800px;
@@ -232,7 +230,6 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         margin-top: 20px;
     }
-    /* ------------------- МЕДИА-ЗАПРОСЫ ------------------- */
     @media (max-width: 1024px) {
         .column {
             width: 45%; /* Две колонки на средней ширине */
@@ -299,7 +296,7 @@
 
   <div id="mainContent" class="content">
 
-    <div class="column">
+   <div class="column">
       <h3>Chat Selector</h3>
       <div class="chat-selector">
         <button onclick="showChat('chat1')">CHAT 1</button>
@@ -329,22 +326,22 @@
       </div>
     </div>
 
-    <div class="column">
+   <div class="column">
       <h3>Opening Date</h3>
       <p><strong>12 November 2023</strong><br>
       Our new website is finally live! Explore the new features and design.</p>
 
-      <h3>Dream Team Project</h3>
+   <h3>Dream Team Project</h3>
       <ul>
         <li>Vibe</li>
         <li>Teamwork</li>
         <li>Illustration</li>
       </ul>
 
-      <button class="info-button" onclick="openPopup()">Подробнее о нас</button>
+   <button class="info-button" onclick="openPopup()">Подробнее о нас</button>
     </div>
 
-    <div class="column">
+   <div class="column">
       <h3>MEM ZONE</h3>
       <div id="memeGallery" style="text-align:center;">
         <div class="meme">
@@ -360,7 +357,7 @@
       </div>
     </div>
 
-    <div class="column">
+  <div class="column">
       <h3>Mood Generator</h3>
       <div class="mood-container">
         <button class="mood-btn" onclick="generateMood()">Сгенерировать Настроение</button>
@@ -377,9 +374,9 @@
       <h2>SKYLINE FAMILY MERCH</h2>
       <p style="font-size: 1.2em; color: #55788a; margin-bottom: 25px;">Поддержите проект и получите эксклюзивные вещи! ✨</p>
       
-      <img src="http://googleusercontent.com/image_collection/image_retrieval/180634520233982858_0" alt="Skyline Family Merchandise Mockup">
+  <img src="http://googleusercontent.com/image_collection/image_retrieval/180634520233982858_0" alt="Skyline Family Merchandise Mockup">
       
-      <p style="margin-top: 30px; font-size: 1.3em; font-weight: bold; color: #333;">СКОРО В ПРОДАЖЕ!</p>
+  <p style="margin-top: 30px; font-size: 1.3em; font-weight: bold; color: #333;">СКОРО В ПРОДАЖЕ!</p>
       <button onclick="showSection('main')" class="info-button" style="width: 50%; max-width: 300px; margin: 20px auto 0;">Вернуться на главную</button>
   </div>
   <div class="telegram-link">
